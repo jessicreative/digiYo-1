@@ -32,4 +32,5 @@ You will be gerneated a Private Key and a Public Key. Store these keys (especial
  - Change the names of the contracts in your "deployments" and "contracts" sections to the contract(s) you wish to deploy.
  
  - Run the deploy command. Make sure you are on the same level as your flow.json file.
-     flow project deploy --network=testnet
+ 
+    flow project deploy --network=testnet
