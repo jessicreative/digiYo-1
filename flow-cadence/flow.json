@@ -1,0 +1,41 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "my-testnet-account"
+		}
+	},
+	"contracts": {
+		"yourContractName1": "path_to_your_contract1",
+		"yourContractName2": "path_to_your_contract2"
+	},
+	"networks": {
+		"emulator": {
+			"host": "127.0.0.1:3569",
+			"chain": "flow-emulator"
+		},
+		"mainnet": {
+			"host": "access.mainnet.nodes.onflow.org:9000",
+			"chain": "flow-mainnet"
+		},
+		"testnet": {
+			"host": "access.devnet.nodes.onflow.org:9000",
+			"chain": "flow-testnet"
+		}
+	},
+	"accounts": {
+		
+		"my-testnet-account": {
+			"address": $account_address ,
+			"keys": $privatekey
+		  
+		}
+
+	},
+	"deployments": {
+		
+	   "testnet": {
+		"my-testnet-account": ["yourContractName1", "yourContractName2"]
+	  }
+	}
+}
