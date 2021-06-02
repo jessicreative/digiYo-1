@@ -1,7 +1,7 @@
 # digiYo
 
 Welcome to Batstoi's digiYo development document!
-
+![Batstoi Logo](/ 
 ## What is digiYo?
 
 digiYo is [Batstoi’s](https://batstoi.com/) own nonfungible token game developed with flow cadence.
