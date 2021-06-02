@@ -15,4 +15,11 @@ Make sure you are running the flow emulator
 You will be gerneated a Private Key and a Public Key. Store these keys (especially the private key) somewhere safe
 
 ### Request your account
-Go to [Testnet Faucet](https://testnet-faucet-v2.onflow.org/)
+Go to [Testnet Faucet](https://testnet-faucet-v2.onflow.org/), enter your public key, and click create new account
+
+### Funding your account
+ Enter your account address gerneated from before into the Fund Account box.
+ 
+ ## 2. Accessing Flow Testnet
+ 
+ Download the flow.json file in this repository. in teh accounts section, add your testnet account.
