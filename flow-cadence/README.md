@@ -23,7 +23,7 @@ You will be gerneated a Private Key and a Public Key. Store these keys (especial
  
  ## 2. Accessing Flow Testnet
  
- Download the flow.json file in this repository. 
+ Download the [flow.json](flow.json) file in this repository. 
  
  In the "accounts" section, add your testnet account.
  
