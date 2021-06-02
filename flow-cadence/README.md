@@ -10,7 +10,9 @@ You'll need to have installed the Flow CLI, which can be done easily by followin
 
 - ### Generate a key pair (public and private keys):
 In a terminal shell (or command line) run:
+
     flow keys generate
+
 You will be gerneated a Private Key and a Public Key. Store these keys (especially the private key) somewhere safe
 
 - ### Request your account
@@ -21,16 +23,16 @@ You will be gerneated a Private Key and a Public Key. Store these keys (especial
  
  ## 2. Accessing Flow Testnet
  
- - Download the flow.json file in this repository. 
+ Download the flow.json file in this repository. 
  
- - In the "accounts" section, add your testnet account.
+ In the "accounts" section, add your testnet account.
  
- - In the "keys" section under "my-testnet-account", add your private key information.
+ In the "keys" section under "my-testnet-account", add your private key information.
  
  
 ## 3. Deploying Contracts
- - Change the names of the contracts in your "deployments" and "contracts" sections to the contract(s) you wish to deploy.
+ Change the names of the contracts in your "deployments" and "contracts" sections to the contract(s) you wish to deploy.
  
- - Run the deploy command. Make sure you are on the same level as your flow.json file.
+ Run the deploy command. Make sure you are on the same level as your flow.json file.
  
     flow project deploy --network=testnet
