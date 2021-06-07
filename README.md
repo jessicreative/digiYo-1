@@ -16,5 +16,5 @@ digiYo is [Batstoi’s](https://batstoi.com/) nonfungible token game developed w
 Our video game provides an interactive and engaging experience for you to make the most out of digiYo. We support in-game buying of card packs, inter-user trading, and more.
 
 ## What is this dev doc?
-This github repository was made to record our work on a public interface to both receive and offer feedback from the rest of the [flow](https://www.onflow.org/) community. This dev doc includes cadence files that manage our digiYo minting and transactions and information about our webapp created using node.js and react. 
+This github repository was made to record our work on a public interface to both receive and offer feedback from the rest of the [flow](https://www.onflow.org/) community. This dev doc includes cadence files that manage our digiYo minting and transactions and node js files that manage our webapp. 
 
