@@ -5,8 +5,8 @@
     <img width="400" src="BT_logo_color.png" /> 
   </a>
 </p>
-<p align = "center">
-  Welcome to Batstoi's digiYo development document!
+<p align = "center" >
+  <b>Welcome to Batstoi's digiYo development document!</b>
   </p>
   
 ## What is digiYo?
