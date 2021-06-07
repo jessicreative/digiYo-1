@@ -13,7 +13,7 @@
 
 digiYo is [Batstoi’s](https://batstoi.com/) nonfungible token game developed with flow cadence featuring various martial arts through 3D animations created using motion capture technology. 
 
-Our video game provides an interactive and engaging experience for you to make the most out of digiYo. We support in-game buying of card packs, inter-user trading, and more through the [Blocto] app (https://blocto.portto.io/en/).
+Our video game provides an interactive and engaging experience for you to make the most out of digiYo. We support in-game buying of card packs, inter-user trading, and more through the [Blocto](https://blocto.portto.io/en/) app.
 
 ## What is this dev doc?
 This github repository was made to record our work on a public interface to both receive and offer feedback from the rest of the [flow](https://www.onflow.org/) community! This dev doc includes Cadence files for our digiYo minting and transactions and Node JS files for our webapp. 
