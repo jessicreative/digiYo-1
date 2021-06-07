@@ -19,4 +19,4 @@ Our video game provides an interactive and engaging experience for you to make t
 This github repository was made to record our work on a public interface to both receive and offer feedback from the rest of the [flow](https://www.onflow.org/) community! This dev doc includes Cadence files for our digiYo minting based on blockchain and transactions and Node JS files for our webapp. 
 
 ## Requirements for following through 
-If you wish to run this repository, you will need to [install Flow Command Line (FCL)](https://docs.onflow.org/flow-js-sdk/flow-app-quickstart#create-react-app-and-other-dependencies). 
+If you wish to run this repository, you will need to [install Flow Command Line (FCL)](https://docs.onflow.org/flow-cli/install). 
