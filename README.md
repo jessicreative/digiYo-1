@@ -25,7 +25,6 @@ If you wish to run this repository, you will need to [install Flow Command Line 
 
 Creating a webapp utilizing blockchain from scratch may be daunting and confusing. This legend (with a bunch of cool dropdowns) may help you understand the format better!
 
-
 <!DOCTYPE html>
 <details>
     <summary>app</summary>
@@ -34,15 +33,15 @@ Creating a webapp utilizing blockchain from scratch may be daunting and confusin
     </ul>
     <ul style="list-style-type:none;">
         <li><details>
-        <summary>cadence folder</summary>
+        <summary><b>cadence</b></summary>
           This is where we put the contracts, scripts, and transactions
           where we put the contracts, scripts, transactions
         </details></li>
         <li><details>
-        <summary>web folder</summary>
+        <summary><b>web</b></summary>
             <ul style="list-style-type:none;">
                 <li><details>
-                    <summary><b>public folder</b></summary>
+                    <summary><b>public</b></summary>
                     The root folder that gets dealt by the web server in the end; contains a significant file, index.html
                     <ul style="list-style-type:none;">
                     <li><details>
@@ -57,26 +56,26 @@ Creating a webapp utilizing blockchain from scratch may be daunting and confusin
                     </details>
                 </li>
                 <li><details>
-                    <summary>src folder</summary>
+                    <summary><b>src</b></summary>
                     <ul style="list-style-type:none;">
                         <li><details>
                             <summary>parts folder</summary>
                             Contains general components that use one or more Hooks and one or more display components.
                         </details>
                         <li><details>
-                            <summary>svg folder</summary>
+                            <summary><b>svg</b></summary>
                             Contains images of NFTs and logos.
                             <ul style = "list-style-type:none;">
                                 <li>
                                     <details>
-                                        <summary>items folder</summary>
+                                        <summary><b>items</b></summary>
                                         Contains images of NFTs
                                     </details>
                               </li>
                             </ul>
                             </details>
                         <li><details>
-                            <summary>util folder</summary>
+                            <summary><b>util</b></summary>
                             Contains small single-purpose funcitons, without dependencies, free of side effects, and format values (to print and view in UI). 
                             <ul style = "list-style-type:none;">
                                 <li><details>
@@ -160,5 +159,6 @@ Creating a webapp utilizing blockchain from scratch may be daunting and confusin
                     Contains information that you do not want to commit to git, such as the .env file. 
                 </details>
                 </li>
+
     </ul>
 </details>
