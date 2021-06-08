@@ -159,6 +159,5 @@ Creating a webapp utilizing blockchain from scratch may be daunting and confusin
                     Contains information that you do not want to commit to git, such as the .env file. 
                 </details>
                 </li>
-
     </ul>
 </details>
