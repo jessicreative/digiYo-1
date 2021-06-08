@@ -26,7 +26,6 @@ If you wish to run this repository, you will need to [install Flow Command Line 
 Creating a webapp utilizing blockchain from scratch may be daunting and confusing. This legend (with a bunch of cool dropdowns) may help you understand the format better!
 
 
-
 <details>
     <summary>app</summary>
     <ul>
@@ -72,28 +71,57 @@ Creating a webapp utilizing blockchain from scratch may be daunting and confusin
                                         <summary>items folder</summary>
                                         Contains images of NFTs
                                     </details>
-                                </li>
-                                
+                              </li>
                             </ul>
                             </details>
                         <li><details>
                             <summary>util folder</summary>
                             Contains small single-purpose funcitons, without dependencies, free of side effects, and format values (to print and view in UI). 
                             <ul style = "list-style-type:none;">
-                                <details>
+                                <li><details>
                                     <summary>fetcher.js</summary>
-                                
                                 <ul>
                                     <li>a function that returns the data (formatted in json) from a url</li>
                                     <li>Will be imported and called in use_market_items.hook.js to fetch data in line 22 in funciton useSWR()</li>
                                 </ul>
-                            </details>
+                            </details></li>
+                            <li><details>
+                                <summary>fmt-flow.js</summary>
+                                <ul>
+                                    <li>a function for displaying flow balance (as a string)</li>
+                                    <li>imported and called in flow-balance-cluster.comp.js to show flow balance in a label on line 16.</li>
+                                </ul>
+                            </details></li>
+                            <li><details>
+                                <summary>fmt-kibble.js</summary>
+                                <ul>
+                                    <li>a function for displaying coin (digiyo currency) balance as a cleaned up string.</li>
+                                    <li>imported and called in balance-cluster.comp.js to show coin balance in table data in line 45 and also in kibbles-balance-cluster.comp.js to show coin balance in label in line 18.</li>
+                                </ul>
+                            </details></li>
+                            <li><details>
+                                <summary>normalize-item.js</summary>
+                                <ul>
+                                    <li>a function that (given an item (json data fetched from useSWR) as parameter) returns an object assoicated with metadata, item id, type id, owner, price, and transaction id.</li>
+                                    <li>Where it is called: after fetching data using useSWR in use-market-items.hook.js, if successful, it will take a list given by some parent component, loop through all the items fetched previously, make them into objects with metadata, then set the parent's list as a list of objects with those formatted data. See line 29.</li>
+                                </ul>
+                            </details></li>
+                            <li><details>
+                                <summary>sleep.js</summary>
+                                <ul>
+                                    <li>a function to make the code wait (default wait time = 500 miliseconds) before executing the next line of code.</li>
+                                    <li>since Javascript is asynchronous, this means you can't pause/block code execution, so you must use this funciton to make things wait </li>
+                                    <li>use in use-initialized.hook.js where it returns a function that maintains variables about whether the account is initialized, its status, flow and kibble (coiin) balance. It updates by calling the initializeAccount function (status PROCESSSING). If successful, it refreshes the flow kibble balance and sets SUCCESS status. When initialization and update process is complete, it calls the SLEEP (delay time) to wait and then reset the status back ot IDLE. See line 73.</li>
+                                </ul>
+                            </details></li>
                             </ul>
                         </details></li>
+                        <li>index.js</li>
+                        <li><details><summary>font.css and theme.js</summary>
+                        Installed UI theme and font</details></li>
                     </ul>
                 </details></li>
             </ul>
-            
         </details>
     </ul>
 </details>
