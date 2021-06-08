@@ -29,7 +29,7 @@ Creating a webapp utilizing blockchain from scratch may be daunting and confusin
 <details>
     <summary>app</summary>
     <ul>
-        <li>api folder</li>
+      <li><b>api</b></li>
     </ul>
     <ul style="list-style-type:none;">
         <li><details>
