@@ -26,6 +26,7 @@ If you wish to run this repository, you will need to [install Flow Command Line 
 Creating a webapp utilizing blockchain from scratch may be daunting and confusing. This legend (with a bunch of cool dropdowns) may help you understand the format better!
 
 
+<!DOCTYPE html>
 <details>
     <summary>app</summary>
     <ul>
@@ -118,10 +119,46 @@ Creating a webapp utilizing blockchain from scratch may be daunting and confusin
                         </details></li>
                         <li>index.js</li>
                         <li><details><summary>font.css and theme.js</summary>
-                        Installed UI theme and font</details></li>
+                        Files for installed UI theme and font</details></li>
                     </ul>
                 </details></li>
+                <li>
+                    <details>
+                        <summary>.env.example</summary>
+                        Contains environment variables.
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>package.json and package-lock.json</summary>
+                        Json file to install dependencies; automatically created with <code>create-react-app</code>.
+                    </details>
+                </li>
             </ul>
-        </details>
+        </details></li>
+        <li>
+            <details>
+                <summary>app.json</summary>
+                Contains information about the flow account such as the address and private key. 
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>flow.json</summary>
+                Where you can update/add/delete the names and file locations of the contracts as they are created and specifiy which network the contracts are deployed to.
+            </details>
+            </li>
+            <li>
+            <details>
+                <summary>.env</summary>
+                Stores FLOW_ADDRESS and FLOW_PRIVATE_KEY. 
+            </details>
+            </li>
+            <li>
+                <details>
+                    <summary>.gitignore</summary>
+                    Contains information that you do not want to commit to git, such as the .env file. 
+                </details>
+                </li>
     </ul>
 </details>
