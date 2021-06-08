@@ -21,7 +21,7 @@ This github repository was made to record our work on a public interface to both
 ## Requirements for following through 
 If you wish to run this repository, you will need to [install Flow Command Line (FCL)](https://docs.onflow.org/flow-cli/install). 
 
-# Webapp Design
+## Webapp Design
 
 Creating a webapp utilizing blockchain from scratch may be daunting and confusing. This legend (with a bunch of cool dropdowns) may help you understand the format better!
 
