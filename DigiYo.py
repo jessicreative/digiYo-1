@@ -31,16 +31,16 @@ class DigiYo(object):
         
         run = self.move_printRun_int
         
-        if (run <= 50):                     #the limits are just guesses, we can change as we go along
+        if (run <= 25):                     #the limits are just guesses, we can change as we go along
             return 'LEGENDARY'
         #elif (run <= 500):
         #    return 'VERY RARE'
-        elif (run <= 1000):
+        elif (run <= 500):
             return 'RARE'
-        elif (run <= 5000):
+        elif (run <= 4000):
             return 'UNCOMMON'
         else:
-            return 'COMMON'
+            return 'COMMON'               #assumes max print run = 10k, => 60% of cards are common, 35% of cards are uncommon, 4.75% of cards are rare, .25% of cards are legendary
         
         #We can change get rarity to take in the proportion of the move relative to the
         #amount of cards in the ecosystem/drop
