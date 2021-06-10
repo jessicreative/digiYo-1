@@ -151,16 +151,7 @@ class DigiYo(object):
     
             
         
-'''myDigiYo = DigiYo('HiC', 'Common', -1,-3)   
-  
-archetype = myDigiYo.getArchetype()
-print('Move Name = ' + myDigiYo.move_name_str)
-print('Archetype = ' + archetype)
-print('Archetype Color = ' + myDigiYo.getArchetypeColor())
-print('Rarity Color = ' +  myDigiYo.getRarityColor())        
-   
-        
-'''
+
     
     
     
