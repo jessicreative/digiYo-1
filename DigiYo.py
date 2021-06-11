@@ -27,11 +27,12 @@ class DigiYo(object):
         
         
     
-    def getRarity(self): #Might not need                           
+    def getRarity(self): #Disregard this function, rarity will just be a string given when we instantiate a DigiYo object
+                            
         
         run = self.move_printRun_int
         
-        if (run <= 25):                     #the limits are just guesses, we can change as we go along
+        if (run <= 25):                     
             return 'LEGENDARY'
         #elif (run <= 500):
         #    return 'VERY RARE'
@@ -40,10 +41,9 @@ class DigiYo(object):
         elif (run <= 4000):
             return 'UNCOMMON'
         else:
-            return 'COMMON'               #assumes max print run = 10k, => 60% of cards are common, 35% of cards are uncommon, 4.75% of cards are rare, .25% of cards are legendary
+            return 'COMMON'               
         
-        #We can change get rarity to take in the proportion of the move relative to the
-        #amount of cards in the ecosystem/drop
+        
         
     
     def getRarityColor(self):
