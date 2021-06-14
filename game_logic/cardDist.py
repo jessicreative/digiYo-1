@@ -10,7 +10,6 @@ import random
     
 def createPack(packSize: int,LegendLimit: float, RareLimit: float,UncommonLimit):
     LEGEND_LIMIT = LegendLimit
-    VRARE_LIMIT = VRareLimit
     RARE_LIMIT = RareLimit
     UNCOMMON_LIMIT = UncommonLimit
     
@@ -19,7 +18,6 @@ def createPack(packSize: int,LegendLimit: float, RareLimit: float,UncommonLimit)
     common = 0 
     uncommon = 0
     rare = 0
-    very_rare = 0
     legendary = 0
 
     for x in range (0,PACK_SIZE):
@@ -77,9 +75,6 @@ def getRare():
     # Return card at random from rare card library'''
     return
     
-def getVRare():
-    # Return card at random from very rare card library'''
-    return
     
 def getLegendary():
     # Return card at random from legendary card library'''
