@@ -4,6 +4,9 @@
   <a href = https://batstoi.com/>
     <img width="400" src="BT_logo_color.png" /> 
   </a>
+  <a href = https://batstoi.com/xp/>
+    <img width="400" src="DIGIYO_SOCIAL-CIRCLE.png" /> 
+  </a>
 </p>
 <p align = "center" >
   <b>Welcome to Batstoi's digiYo repository!</b>
