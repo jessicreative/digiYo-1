@@ -67,7 +67,8 @@ def createGold():
         return createGold()
 
 def createStarter():
-    
+    #instead of getting a random set of common cards, we have to make sure it 
+    #gets cards that will allow the users to complete the tutorial
     return createPack(10, 1000,1000,1000)
     
     
