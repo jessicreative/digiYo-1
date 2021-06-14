@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Spyder Editor
-
 This is a temporary script file.
 """
 
@@ -42,21 +41,21 @@ def createPack(packSize: int,LegendLimit: float, RareLimit: float,UncommonLimit)
         
         pack = [common, uncommon, rare, legendary]   #Cards will already be appended'''
         
-    print(pack)  #instead would be return pack'''
-    return
+    #print(pack)  #instead would be return pack'''
+    return pack
     
     
 def createBronze():
     createPack(5,997.5,950,600)  #returns the basic pack''
-    return
+    return createPack(5,997.5,950,600)
     
 def createSilver():
-    createPack(5,992.5,900,500)  #returns intermediate pack'''
-    return
+      #returns intermediate pack'''
+    return createPack(5,975,850,500)
     
 def createGold():
-    createPack(5, 985,850,450)   #returns advanced pack'''
-    return
+       #returns advanced pack'''
+    return createPack(5, 950,800,450)
 
 def createStarter():
     createPack(10, 1001,1001,1001)
@@ -79,5 +78,33 @@ def getRare():
 def getLegendary():
     # Return card at random from legendary card library'''
     return
-    
-    
+
+def sampleBronze():
+    pack = [0,0,0,0]
+    for x in range (10001):
+        p1 = createBronze()
+        for i in range (0, 4):
+            
+            pack[i] = p1[i]+pack[i]
+    pack = [pack[0]/10000.0, pack[1]/10000.0, pack[2]/10000.0, pack[3]/10000.0]
+    return pack
+
+def sampleSilver():
+    pack = [0,0,0,0]
+    for x in range (10001):
+        p1 = createSilver()
+        for i in range (0, 4):
+            pack[i] = p1[i] + pack[i]
+            
+    pack = [pack[0]/10000.0, pack[1]/10000.0, pack[2]/10000.0, pack[3]/10000.0]
+    return pack
+
+def sampleGold():
+    pack = [0,0,0,0]
+    for x in range (10001):
+        p1 = createGold()
+        for i in range (0, 4):
+            pack[i] = p1[i] + pack[i]
+            
+    pack = [pack[0]/10000.0, pack[1]/10000.0, pack[2]/10000.0, pack[3]/10000.0]
+    return pack 
