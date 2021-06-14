@@ -8,7 +8,7 @@ This is a temporary script file.
 import random
 
     
-def createPack(packSize: int,LegendLimit: float, VRareLimit: float, RareLimit: float,UncommonLimit):
+def createPack(packSize: int,LegendLimit: float, RareLimit: float,UncommonLimit):
     LEGEND_LIMIT = LegendLimit
     VRARE_LIMIT = VRareLimit
     RARE_LIMIT = RareLimit
@@ -30,8 +30,8 @@ def createPack(packSize: int,LegendLimit: float, VRareLimit: float, RareLimit: f
         if (x > LEGEND_LIMIT):
             legendary += 1   #replace with pack.append(getLegendary())
         
-        elif (x > VRARE_LIMIT):
-            very_rare += 1   #replace with pack.append(getVRare())'''
+        #elif (x > VRARE_LIMIT):
+        #    very_rare += 1   #replace with pack.append(getVRare())'''
         
         elif (x > RARE_LIMIT):
             rare += 1      #replace with pack.append(getRare())'''
@@ -42,22 +42,26 @@ def createPack(packSize: int,LegendLimit: float, VRareLimit: float, RareLimit: f
         else:
             common += 1    #replace with pack.append(getCommon())'''
         
-        pack = [common, uncommon, rare, very_rare, legendary]   #Cards will already be appended'''
+        pack = [common, uncommon, rare, legendary]   #Cards will already be appended'''
         
     print(pack)  #instead would be return pack'''
     return
     
     
-def createBasic():
-    createPack(10,999.5, 980, 900, 750)  #returns the basic pack''
+def createBronze():
+    createPack(5,997.5,950,600)  #returns the basic pack''
     return
     
-def createIntermediate():
-    createPack(10, 998.75, 965, 825, 600)  #returns intermediate pack'''
+def createSilver():
+    createPack(5,992.5,900,500)  #returns intermediate pack'''
     return
     
-def createAdvanced():
-    createPack(10, 995, 925, 775, 550)   #returns advanced pack'''
+def createGold():
+    createPack(5, 985,850,450)   #returns advanced pack'''
+    return
+
+def createStarter():
+    createPack(10, 1001,1001,1001)
     return
     
     
