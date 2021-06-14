@@ -46,20 +46,29 @@ def createPack(packSize: int,LegendLimit: float, RareLimit: float,UncommonLimit)
     
     
 def createBronze():
-    createPack(5,997.5,950,600)  #returns the basic pack''
     return createPack(5,997.5,950,600)
     
 def createSilver():
-      #returns intermediate pack'''
-    return createPack(5,975,850,500)
+    pack = createPack(5,975,850,500)
+    score = pack[0] + pack[1]*5 + pack[2]*10 + pack[3]*15
+    if score >= 14:
+        return pack 
+    else: 
+      
+        return createSilver()
     
 def createGold():
-       #returns advanced pack'''
-    return createPack(5, 950,800,450)
+    pack = createPack(5, 950,800,450)
+    score = pack[0] + pack[1]*5 + pack[2]*10 + pack[3]*15
+    if score >= 26:
+        return pack 
+    else: 
+      
+        return createSilver()
 
 def createStarter():
-    createPack(10, 1001,1001,1001)
-    return
+    
+    return createPack(10, 1000,1000,1000)
     
     
     
@@ -107,4 +116,4 @@ def sampleGold():
             pack[i] = p1[i] + pack[i]
             
     pack = [pack[0]/10000.0, pack[1]/10000.0, pack[2]/10000.0, pack[3]/10000.0]
-    return pack 
+    return pack    
