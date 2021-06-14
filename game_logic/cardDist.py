@@ -64,7 +64,7 @@ def createGold():
         return pack 
     else: 
       
-        return createSilver()
+        return createGold()
 
 def createStarter():
     
