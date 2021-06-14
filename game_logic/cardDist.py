@@ -41,7 +41,7 @@ def createPack(packSize: int,LegendLimit: float, RareLimit: float,UncommonLimit)
         
         pack = [common, uncommon, rare, legendary]   #Cards will already be appended'''
         
-    #print(pack)  #instead would be return pack'''
+    
     return pack
     
     
@@ -51,7 +51,7 @@ def createBronze():
 def createSilver():
     pack = createPack(5,975,850,500)
     score = pack[0] + pack[1]*5 + pack[2]*10 + pack[3]*15
-    if score >= 14:
+    if score >= 14: #ensures that the pack is at least Silver-ish
         return pack 
     else: 
       
@@ -60,7 +60,7 @@ def createSilver():
 def createGold():
     pack = createPack(5, 950,800,450)
     score = pack[0] + pack[1]*5 + pack[2]*10 + pack[3]*15
-    if score >= 26:
+    if score >= 26:  #ensures that the pack is at least Gold-ish
         return pack 
     else: 
       
@@ -88,7 +88,8 @@ def getRare():
 def getLegendary():
     # Return card at random from legendary card library'''
     return
-
+#The Sampe methods are used to see the average spread of cards by rarity over 10,000 packs.
+#I used them to make sure that the different types of packs are distinct enough from eachother
 def sampleBronze():
     pack = [0,0,0,0]
     for x in range (10001):
