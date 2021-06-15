@@ -26,7 +26,13 @@ If you wish to run this repository, you will need to [install Flow Command Line 
 
 ## Webapp Design
 
-Creating a webapp utilizing blockchain from scratch may be daunting and confusing. This legend (with a bunch of cool dropdowns) may help you understand the format better!
+Creating a webapp utilizing blockchain from scratch may be daunting and confusing. This outline (with a bunch of cool dropdowns) may help you understand the format better!
+
+### Legend
+<ul>
+  <li> Files that end with "tx" are transactions that involve the movement of items and information associated with the address</li>
+  <li> Files that include ".script" are checking information associated with that address
+</ul>
 
 <!DOCTYPE html>
 <details>
