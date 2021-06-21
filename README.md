@@ -5,7 +5,7 @@
     <img width="400" src="BT_logo_color.png" /> 
   </a>
   <a href = https://batstoi.com/xp/>
-    <img width="400" src="DIGIYO_SOCIAL-CIRCLE.png" /> 
+    <img width="400" src="digiYo_logo.png" /> 
   </a>
 </p>
 <p align = "center" >
