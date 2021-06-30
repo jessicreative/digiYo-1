@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
 import DigiYoMove
 import MatchMaker
 import MatchAnalyzer
@@ -13,7 +19,7 @@ fourthDigiYo = DigiYoMove.DigiYoMove('Half Nelson', 'Common', -1, 2, 'Turns', 'T
 
 listOfDigiYo = [firstDigiYo, secodDigiYo, thirdDigiYo, fourthDigiYo]
 
-maker = MatchMaker.MatchMaker()
+maker = MatchMaker.MatchMaker(5)
 
 for Digi in listOfDigiYo:
     maker.addMove(Digi)
@@ -40,7 +46,8 @@ for Digi in listOfDigiYo:
 user.addCards(firstTraining)
 user.addCards(firstAttire)
 
-user.addStars(analyzer)
+user.completedMatch(analyzer,maker)
+
 
 
 
