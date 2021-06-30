@@ -1,22 +1,30 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun 30 12:27:11 2021
-
-@author: jenny
-"""
 class DigiYoUser(object):
     
     def __init__(self, username = 'user'):
         self.username_string = username
         self.moveLibrary_DigiList = list()
         self.totalStars_int = 0
+        self.balance_int = 0  #refers to in-game currency
+        
         
     
+    #adjusment methods
+    def addBalance(self, credit):
+        self.balance_int += credit
+        return
+    
+    def decBalance(self, debt):
+        self.balance_int -= debt
+        return
     
     def addStars(self, MatchAnalyzer):
         self.totalStars_int += MatchAnalyzer.getStars()
         return        
         
+    
+    
+     #add functions for all types of DigiYo Cards when purchasing packs, and cards
+     #from the market and auctionhouse
     def addCards(self, DigiYoMove):
         self.moveLibrary_DigiList.append(DigiYoMove)
         return
@@ -29,6 +37,10 @@ class DigiYoUser(object):
         self.moveLibrary_DigiList.append(DigiYoArticle)
         return
     
+    
+    
+    #pop functions for all types of DigiYo Cards when selling packs, whether in the 
+    #auction house or back to us
     def giveCards(self, DigiYoMove):
         i = self.moveLibrary_DigiList.index(DigiYoMove)
         return self.moveLibrary_DigiList.pop(i)#index of card user is giving
@@ -41,6 +53,8 @@ class DigiYoUser(object):
         i = self.moveLibrary_DigiList.index(DigiYoArticle)
         return self.moveLibrary_DigiList.pop(i)#index of card user is giving
     
+    
+    #get functions to retrieve variavbles
     def getUsername(self):
         return self.username_string
     
@@ -49,5 +63,8 @@ class DigiYoUser(object):
     
     def getCards(self):
         return self.moveLibrary_DigiList
+    
+    def getBalance(self):
+        return self.balance_int
     
     
