@@ -4,20 +4,21 @@ Created on Thu Jun  3 12:07:36 2021
 
 @author: jenny
 """
-import DigiYo
+import DigiYoMove
 
 class MatchMaker(object):
     
 
     
-    def __init__(self, reqStart = 'null', reqEnd = 'null'):
+    def __init__(self, reward = 0, reqStart = 'null', reqEnd = 'null'):
         self.start_str = reqStart
         self.end_str = reqEnd
         self.listOfMoves = []
+        self.reward_int = reward 
         
 
         
-    def addMove(self, move: DigiYo):
+    def addMove(self, move: DigiYoMove):
         if len(self.listOfMoves) == 0:
             if (self.start_str == 'null'):
                 self.listOfMoves.append(move)
@@ -56,6 +57,9 @@ class MatchMaker(object):
         
         tupOfMoves = tuple(self.listOfMoves)
         return tupOfMoves
+    
+    def getReward(self):
+        return self.reward_int
     
     
     
