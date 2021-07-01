@@ -5,7 +5,7 @@ Created on Sun Apr 11 16:31:14 2021
 @author: jenny
 """
 
-class DigiYo(object):
+class DigiYoMove(object):
     '''interactive NFT Class'''
     
     #Include a start and end state for each move?
