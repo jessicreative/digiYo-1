@@ -13,7 +13,7 @@ class MatchMaker(object):
     def __init__(self, reward = 0, reqStart = 'null', reqEnd = 'null'):
         self.start_str = reqStart
         self.end_str = reqEnd
-        self.listOfMoves = []
+        self.listOfMoves = [] #would it be better to make a linked list? Might help for addMove/delMove 
         self.reward_int = reward 
         
 
