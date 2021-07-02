@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun 30 12:27:11 2021
-
-@author: jenny
-"""
 class DigiYoUser(object):
     
     def __init__(self, username = 'user'):
@@ -13,11 +7,11 @@ class DigiYoUser(object):
         self.balance_int = 0  #refers to in-game currency
         
         
-    def completedMatch(self, MatchAnalyzer, MatchMaker):
-        self.addBalance(MatchMaker.getReward())
-        self.addStars(MatchAnalyzer.getStars())
+   # def completedMatch(self, MatchAnalyzer, MatchMaker):
+    #    self.addBalance(MatchMaker.getReward())
+     #   self.addStars(MatchAnalyzer.getStars())
         
-        return
+      #  return
     
     
     
