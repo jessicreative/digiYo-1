@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 import DigiYoMove
 import MatchMaker
 import MatchAnalyzer
@@ -36,6 +30,8 @@ print('This match earned '+ str(analyzer.getStars()) + ' stars')
 
 
 
+
+
 firstTraining = DigiYoTrain.DigiYoTrain('Sprawls','Common', 'Warm Up', False )
 firstAttire = DigiYoArticle.DigiYoArticle('Singlet', 'Common', 'Clothing','Singlet' )
 
@@ -46,7 +42,13 @@ for Digi in listOfDigiYo:
 user.addCards(firstTraining)
 user.addCards(firstAttire)
 
-user.completedMatch(analyzer,maker)
+analyzer.giveRewards(user, maker)
+
+
+
+
+
+
 
 
 
