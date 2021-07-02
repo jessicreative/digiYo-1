@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun  2 13:32:09 2021
-
-@author: jenny
-"""
 import math 
 
 class MatchAnalyzer(object):
@@ -134,6 +128,19 @@ class MatchAnalyzer(object):
             stars += 1
         
         return stars
+
+    def giveRewards(self, DigiYoUser, MatchMaker):
+        stars = self.getStars()
+        
+        DigiYoUser.addStars(stars)
+        
+        reward = MatchMaker.getReward()
+        DigiYoUser.addBalance(reward*stars)
+        
+        return
+            
+        
+    
             
             
             
