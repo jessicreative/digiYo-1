@@ -1,11 +1,11 @@
 import * as fcl from "@onflow/fcl"
 import * as t from "@onflow/types"
 
-export async function fetchMarketItem(address, id) {
+export async function fetch_PrimaryMarketItem(address, id) {
   return fcl
     .send([
       fcl.script`
-      import KittyItemsMarket from 0xKittyItemsMarket
+      import digiYoItemsMarket from 0xdigiYoItemsMarket
 
       pub struct SaleItem {
         pub let itemID: UInt64
